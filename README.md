@@ -1,13 +1,24 @@
 
-# Observed Trends
+# Twitter Sentiment Analysis of Various News Sources
 
-- Of the sample data pulled, the news sources seemed to have an overall neutral sentiment. This can be seen by the congregation of points at 0 on the scatter plot. It is also seen by the mean compound sentiments all being within +-.09
+This project analyzed tweets by __BBC, CBS, CNN, Fox, and The New York Times__ using the [VADER Sentiment Analysis](https://github.com/cjhutto/vaderSentiment) tool. The last 100 tweets were pulled from each source from 03/27/2018. 
 
-- @FoxNews and @nytimes did see the lowest average compound scores (although still relatively neutral)
+##### Sentiment Analsis of Tweets over Time
+![Scatter](output_6_0.png)
 
-- @CBS saw the highest average compound scores (although still relatively neutral)
+##### Overall Sentiment Analysis by News Source
+![Bar](output_8_0.png)
+
+#### Observed Trends
+
+1. Of the sample data pulled, the news sources seemed to have an overall neutral sentiment. This can be seen by the congregation of points at 0 on the scatter plot. It is also seen by the mean compound sentiments all being within +-.09
+
+2. @FoxNews and @nytimes did see the lowest average compound scores (although still relatively neutral)
+
+3. @CBS saw the highest average compound scores (although still relatively neutral)
 
 
+#### Jupyter Notebook Markdown
 ```python
 # Dependencies
 import pandas as pd
@@ -97,19 +108,6 @@ sentiments.head()
 
 
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -223,19 +221,6 @@ grouping
 
 
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -316,19 +301,6 @@ variance
 
 
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
